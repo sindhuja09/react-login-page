@@ -90,9 +90,11 @@ class RegisterationForm extends Component {
 		if(name==false){
 			document.getElementsByName(`${fieldName}`)[0].style.borderColor="red";
 			document.getElementsByName(`${fieldName}`)[0].style.borderWidth = "2px";
-		}else{
+		 }
+		 else
+		 {
 			document.getElementsByName(`${fieldName}`)[0].style.borderColor="green";
-			document.getElementsByName(`${fieldName}`)[0].style.borderWidth = "2px";
+			document.getElementsByName(`${fieldName}`)[0].style.borderWidth = "1px";
 		}
 
 		this.setState({formErrors: fieldValidationErrors,
